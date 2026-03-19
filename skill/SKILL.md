@@ -1,1 +1,1 @@
-# SKILL.md — WIP
+# SKILL.md — Work in Progress

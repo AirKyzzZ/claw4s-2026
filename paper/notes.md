@@ -1,23 +1,23 @@
-# Notes de Maxime
+# Research Notes — Maxime Mansiet
 
-## Points clés de l'attaque
-- Single point of failure : 1 Grantor compromis suffit
-- Machine-speed : des milliers de DIDs en secondes
-- Proof-of-Trust obtenu avant détection
-- Défense économique (slashing) = réactive, pas préventive
+## Key Attack Points
+- Single point of failure: 1 compromised Grantor is enough
+- Machine-speed: thousands of DIDs validated in seconds
+- Proof-of-Trust obtained before detection
+- Economic defense (slashing) = reactive, not preventive
 
-## Idée de simulation
-- Graphe : N Grantors, M agents IA
-- Scénario 1 : 1 Grantor compromis → propagation
-- Scénario 2 : multi-endorsement (3 Grantors min) → attaque bloquée
-- Métriques : nb DIDs validés avant détection, coût de l'attaque
+## Simulation Idea
+- Graph: N Grantors, M AI agents
+- Scenario 1: 1 compromised Grantor → propagation
+- Scenario 2: multi-endorsement (min 3 Grantors) → attack blocked
+- Metrics: number of DIDs validated before detection, attack cost
 
-## Questions ouvertes
-- Quel seuil de Grantors pour le multi-endorsement ? (3 ? 5 ?)
-- Impact sur la latence de validation légitime ?
-- Compatibilité avec la spec VPR actuelle ?
+## Open Questions
+- What threshold for multi-endorsement? (3? 5?)
+- Impact on legitimate validation latency?
+- Compatibility with current VPR spec?
 
-## Refs à lire
+## References to Read
 - [ ] https://verana-labs.github.io/verifiable-trust-vpr-spec/
 - [ ] https://verana-labs.github.io/verifiable-trust-spec/
-- [ ] Paper gov-ai-agents-with-verifiable-trust-1.2.pdf (Fabrice)
+- [ ] Paper: gov-ai-agents-with-verifiable-trust-1.2.pdf (sent by Fabrice, Verana CTO)

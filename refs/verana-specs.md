@@ -1,1 +1,1 @@
-# Verana Specs — WIP
+# Verana Specs — Work in Progress

@@ -1,52 +1,57 @@
-# CONTEXT.md — Pour Claude Code (sessions futures)
+# CONTEXT.md — For Claude Code Sessions
 
-## Qui est Maxime ?
-- 19 ans, Bordeaux, Software Engineer @ Verana.io + 2060.io
-- Spécialiste SSI (Self-Sovereign Identity), DIDComm, Verifiable Credentials
-- Travaille sur le protocole Verana : trust registry décentralisé on-chain
+## About This Project
+Submission to the **Claw4S Conference 2026** — a hackathon hosted by **Stanford University & Princeton University**.
+- Deadline: April 5, 2026
+- Prize Pool: $50,200 — up to 364 winners
+- Format: submit an executable SKILL.md + research paper to clawRxiv
 
-## Le sujet de recherche
+## About Maxime
+- 19 years old, Bordeaux (France), Software Engineer @ Verana.io + 2060.io
+- Specialist in SSI (Self-Sovereign Identity), DIDComm, Verifiable Credentials
+- Works on the Verana protocol: decentralized on-chain trust registry
+
+## Research Topic
 **Sybil Attacks on Decentralized Trust Registries in the Age of AI Agents**
 
-### Problème identifié
-Dans la spec VPR de Verana, quand un agent lance un Process de Validation, son approbation ne dépend que d'UN SEUL validateur (Grantor). Si un attaquant compromet un seul Grantor (phishing, vol de clé privée DID, ingénierie sociale), il peut :
-1. Approuver instantanément des milliers de DIDs de faux agents IA (machine-speed)
-2. Ces agents obtiennent un Proof-of-Trust légitimement
-3. Avant détection/slashing, ils ont déjà pu interagir avec le réseau
+### Identified Problem
+In Verana's VPR spec, when an agent initiates a Validation Process, its approval depends on only ONE validator (Grantor). If an attacker compromises a single Grantor (phishing, private DID key theft, social engineering), they can:
+1. Instantly approve thousands of fake AI agent DIDs (machine-speed)
+2. These agents legitimately obtain a Proof-of-Trust
+3. Before detection/slashing, they have already interacted with the network
 
-### Défense économique actuelle (Verana)
-- Trust Deposits + Slashing = barrière économique
-- Problème : défense RÉACTIVE, pas préventive
-- Asymétrie entre machine-speed (attaque) et temps de gouvernance (réaction)
+### Current Economic Defense (Verana)
+- Trust Deposits + Slashing = economic barrier
+- Problem: REACTIVE defense, not preventive
+- Asymmetry between machine-speed (attack) and governance response time (reaction)
 
-### Proposition défensive
-Contrainte topologique multi-endorsement :
-- Pour schémas sensibles : validation indépendante par N Grantors distincts avant état VALIDATED
-- Introduit une contrainte de graphe nativement dans le protocole
-- Rend l'attaque structurellement quasi-impossible (compromission N nœuds simultanément)
-- Option configurable par schéma (pas obligatoire pour tous les écosystèmes)
+### Proposed Defense
+Topological multi-endorsement constraint:
+- For sensitive schemas: independent validation by N distinct Grantors before VALIDATED state
+- Introduces a graph constraint natively into the protocol
+- Makes the attack structurally near-impossible (compromising N nodes simultaneously)
+- Configurable per schema (not mandatory for all ecosystems)
 
-## Specs pertinentes
-- VPR spec : https://verana-labs.github.io/verifiable-trust-vpr-spec/
-- VT spec : https://verana-labs.github.io/verifiable-trust-spec/
-- Paper gov AI agents : envoyé par Fabrice (CTO Verana), disponible dans refs/
+## Relevant Specs
+- VPR spec: https://verana-labs.github.io/verifiable-trust-vpr-spec/
+- VT spec: https://verana-labs.github.io/verifiable-trust-spec/
 
-## Format de soumission (clawRxiv)
-POST /api/posts avec :
+## Submission Format (clawRxiv)
+POST /api/posts with:
 - title, abstract, content (Markdown), tags, human_names, skill_md
-- L'agent doit d'abord se register : POST /api/auth/register {"claw_name": "..."}
-- API Base : http://18.118.210.52
+- Agent must first register: POST /api/auth/register {"claw_name": "..."}
+- API Base: http://18.118.210.52
 
-## Objectif du SKILL.md
-Un skill exécutable qui :
-1. Modélise le graphe de confiance VPR
-2. Simule l'attaque Sybil via Grantor compromis
-3. Compare défense réactive (slashing) vs défense topologique (multi-endorsement)
-4. Génère des métriques reproductibles
+## SKILL.md Goal
+An executable skill that:
+1. Models the VPR trust graph
+2. Simulates the Sybil attack via compromised Grantor
+3. Compares reactive defense (slashing) vs topological defense (multi-endorsement)
+4. Generates reproducible metrics
 
-## Prochaines étapes
-- [ ] Lire les specs VPR en détail
-- [ ] Rédiger le draft du paper
-- [ ] Coder la simulation Python
-- [ ] Écrire le SKILL.md
-- [ ] Soumettre via clawRxiv API avant le 5 avril
+## Next Steps
+- [ ] Read VPR specs in depth
+- [ ] Write paper draft
+- [ ] Code Python simulation
+- [ ] Write SKILL.md
+- [ ] Submit via clawRxiv API before April 5

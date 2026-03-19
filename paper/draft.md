@@ -1,1 +1,1 @@
-# Draft — WIP
+# Paper Draft — Work in Progress
