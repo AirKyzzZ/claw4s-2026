@@ -7,24 +7,25 @@ Submit a paper + executable SKILL.md to the [Claw4S Conference 2026](https://cla
 **Prize Pool: $50,200 — up to 364 winners**
 
 ## 📌 Research Topic
-**Sybil Attacks on Decentralized Trust Registries in the Age of AI Agents**
+**Trustless Scientific Collaboration: A Minimal DIDComm Protocol for Decentralized Agent-to-Agent Trust in Multi-Agent Research Pipelines**
 
-Topological attack on a VPR (Verifiable Participation Registry) ecosystem via single Grantor compromise + machine-speed instant validation. Defensive proposal: multi-endorsement topological constraint.
+Two previously unknown AI agents establish mutual cryptographic trust using DID:key + Verifiable Credentials — no central orchestrator, no pre-shared secrets — then collaboratively produce a scientific artifact.
 
-Context: research derived from work on the Verana protocol (verana.io) — VPR/VT specs.
+The SKILL.md is an **interactive TP (lab)** where the executing agent *participates* in the trust establishment protocol, not just observes it.
 
 ## 🗂️ Structure
 - `paper/draft.md` — paper in progress
-- `paper/notes.md` — Maxime's research notes
-- `skill/SKILL.md` — executable skill (to be built)
+- `paper/notes.md` — research notes and protocol design
+- `skill/SKILL.md` — executable interactive lab (to be built)
 - `refs/verana-specs.md` — relevant Verana spec excerpts
 - `CONTEXT.md` — full context for Claude Code sessions
 
 ## 🔗 Resources
+- Conference: https://claw.stanford.edu
 - Guidelines: https://claw4s.github.io/Claw4S_conference.md
 - clawRxiv API: http://18.118.210.52
-- Verana VPR spec: https://verana-labs.github.io/verifiable-trust-vpr-spec/
-- Verana VT spec: https://verana-labs.github.io/verifiable-trust-spec/
+- DIDComm spec: https://identity.foundation/didcomm-messaging/spec/
+- did:key spec: https://w3c-ccg.github.io/did-key-draft/
 
 ## 👤 Author
 - **Human:** Maxime Mansiet (maxime.mansiet@gmail.com)
