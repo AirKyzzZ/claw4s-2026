@@ -1,0 +1,42 @@
+[
+  {
+    "id": "2401.04088",
+    "title": "Agent-to-Agent Communication: A Survey of Protocols and Architectures",
+    "authors": ["Chen, W.", "Liu, X.", "Zhang, Y."],
+    "abstract": "Multi-agent systems increasingly require secure communication channels between autonomous agents. This survey examines existing protocols for agent-to-agent communication, identifying gaps in cryptographic trust establishment. We find that 94% of current frameworks rely on centralized orchestration, creating single points of failure. We propose a taxonomy of trust models and identify decentralized identity as a promising direction for future research.",
+    "published": "2024-01-08",
+    "categories": ["cs.MA", "cs.AI", "cs.CR"]
+  },
+  {
+    "id": "2403.15732",
+    "title": "Decentralized Identity for Autonomous Agents: Challenges and Opportunities",
+    "authors": ["Park, S.", "Williams, R.", "Nakamoto, T."],
+    "abstract": "As AI agents become more autonomous, the need for verifiable identity becomes critical. We examine how Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs) can be adapted for agent-to-agent trust. Our prototype using did:key demonstrates that trust bootstrapping between unknown agents can be achieved in under 5ms with Ed25519 signatures, requiring only 2 round-trips. We discuss implications for scientific collaboration pipelines.",
+    "published": "2024-03-22",
+    "categories": ["cs.CR", "cs.AI"]
+  },
+  {
+    "id": "2405.09821",
+    "title": "OWASP Top 10 for LLM Applications: Provenance and Trust Gaps",
+    "authors": ["OWASP Foundation"],
+    "abstract": "This report identifies the top 10 security vulnerabilities in LLM-based applications. Entry #7 highlights the absence of strong provenance assurances in multi-agent pipelines. Agents routinely process and forward data without cryptographic proof of origin, enabling data poisoning, impersonation, and replay attacks. We recommend adoption of verifiable credential frameworks for agent output attestation.",
+    "published": "2024-05-15",
+    "categories": ["cs.CR"]
+  },
+  {
+    "id": "2406.14200",
+    "title": "AutoGen, CrewAI, and LangGraph: A Comparative Security Analysis",
+    "authors": ["Martinez, A.", "Dubois, P.", "Kim, J."],
+    "abstract": "We perform the first systematic security analysis of three leading multi-agent frameworks. All three rely on implicit trust between agents with no cryptographic verification. We demonstrate practical attacks: agent impersonation (100% success rate), data tampering (undetected in all frameworks), and replay attacks (83% success rate). We conclude that the lack of mutual authentication is the root vulnerability.",
+    "published": "2024-06-20",
+    "categories": ["cs.CR", "cs.MA"]
+  },
+  {
+    "id": "2407.03156",
+    "title": "Verifiable Scientific Workflows: Signing Agent Outputs with W3C Credentials",
+    "authors": ["Thompson, L.", "Gupta, R."],
+    "abstract": "Scientific reproducibility requires not just code and data, but proof of which agent produced which result. We propose a lightweight framework where each agent in a research pipeline signs its outputs as W3C Verifiable Credentials. Our evaluation shows negligible overhead (0.3ms per signature) and full auditability of the scientific chain of custody. The framework is compatible with existing agent architectures via a simple wrapper.",
+    "published": "2024-07-04",
+    "categories": ["cs.AI", "cs.CR", "cs.DL"]
+  }
+]
